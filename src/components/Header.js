@@ -21,7 +21,7 @@ const Header = () => {
           </li>
           <li>
             <button>
-              <NavLink to="sign-in">Login</NavLink>{" "}
+              <NavLink to="sign-in">Login</NavLink>
             </button>
           </li>
         </ul>

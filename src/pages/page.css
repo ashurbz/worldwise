@@ -46,3 +46,38 @@
 border: 2px solid black;
 border-radius: 10px;
 }
+
+
+
+.form_container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    top: 200px;
+}
+.form_container div{
+    padding: 10px;
+}
+
+input{
+    padding: 10px;
+    margin: 10px;
+    background-color: bisque;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.sign_button{
+    padding: 10px;
+    margin: 10px;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 100%;
+}
