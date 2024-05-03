@@ -1,0 +1,30 @@
+.header_container{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 20px;
+    background-color: blueviolet;
+}
+
+.header_container ul{
+    display: flex;
+    margin: 10px;
+    list-style: none;
+}
+
+.header_container ul>li{
+    position: relative;
+    margin: 20px;
+    font: 600;
+    font-size: xx-large;
+   color: white;
+}
+.header_container ul>li>button{
+    padding: 10px;
+    margin: 5px;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: large;
+    font-weight: 400;
+
+}
