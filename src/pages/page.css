@@ -1,0 +1,8 @@
+.product_container{
+    display: flex;
+    color: white;
+    justify-content: space-around;
+    font-size: x-large;
+    padding: 15px;
+    margin: 15px;
+}

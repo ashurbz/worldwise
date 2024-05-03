@@ -3,3 +3,8 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+.App{
+    background-image: linear-gradient(blue, grey );
+    /* background-color: red; */
+}
