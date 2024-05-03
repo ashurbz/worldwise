@@ -25,10 +25,11 @@ const PricingPage = () => {
       </div>
       <div>
         <img
-          src="./building.jpg"
+          className="pricing_img"
+          src="./img-2.jpg"
           alt="building_image"
           width="500"
-          height="500"
+          height="700"
         />
       </div>
     </div>

@@ -41,3 +41,8 @@
     border-radius: 10px;
 }
 
+
+.product_img, .pricing_img{
+border: 2px solid black;
+border-radius: 10px;
+}

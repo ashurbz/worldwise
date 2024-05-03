@@ -5,7 +5,8 @@ const ProductPage = () => {
     <div className="product_container">
       <div>
         <img
-          src="./solo-traveller.jpg"
+          className="product_img"
+          src="./img-1.jpg"
           alt="traveller_Image"
           height="700"
           width="500"
