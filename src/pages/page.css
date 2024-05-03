@@ -1,4 +1,4 @@
-.product_container{
+.product_container, .pricing_container{
     display: flex;
     color: white;
     justify-content: space-around;
@@ -6,3 +6,38 @@
     padding: 15px;
     margin: 15px;
 }
+
+.home_container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    padding:20px;
+    flex-wrap: wrap;
+    color: white;
+    font-size: x-large;
+    font-weight: 700;
+}
+ .para{
+    padding: 10px;
+    position: relative;
+    top: 50px;
+ }
+
+.button{
+    position: relative;
+    top: 100px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.button >button{
+    padding: 10px;
+    margin: 10px;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
