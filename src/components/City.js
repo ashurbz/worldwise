@@ -11,17 +11,19 @@ const City = ({ data, handleDelete }) => {
 
   return (
     <div>
-      <Link to={`${data.id}?lat=${data.position.lat}&lng=${data.position.lng}`}>
-        <div
-          style={{
-            display: "flex",
-            padding: "20px",
-            margin: "20px",
-            justifyContent: "space-around",
-            width: "100%",
-            color: "white",
-            backgroundColor: "darkgray",
-          }}
+      <div
+        style={{
+          display: "flex",
+          padding: "20px",
+          margin: "20px",
+          justifyContent: "space-around",
+          width: "100%",
+          color: "white",
+          backgroundColor: "darkgray",
+        }}
+      >
+        <Link
+          to={`${data.id}?lat=${data.position.lat}&lng=${data.position.lng}`}
         >
           <div>
             <span
@@ -33,25 +35,25 @@ const City = ({ data, handleDelete }) => {
             </span>
             <span>{data.cityName}</span>
           </div>
-          <div>
-            <span
-              style={{
-                padding: "20px",
-              }}
-            >
-              {formattedDate}
-            </span>
-            <span
-              style={{ cursor: "pointer" }}
-              onClick={() => {
-                onDelete(data.id);
-              }}
-            >
-              ❌
-            </span>
-          </div>
+        </Link>
+        <div>
+          <span
+            style={{
+              padding: "20px",
+            }}
+          >
+            {formattedDate}
+          </span>
+          <span
+            style={{ cursor: "pointer" }}
+            onClick={() => {
+              onDelete(data.id);
+            }}
+          >
+            ❌
+          </span>
         </div>
-      </Link>
+      </div>
     </div>
   );
 };
