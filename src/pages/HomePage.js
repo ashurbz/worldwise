@@ -1,5 +1,6 @@
 import React from "react";
 import "./page.css";
+import { Link } from "react-router-dom";
 
 const HomePage = () => {
   return (
@@ -16,7 +17,9 @@ const HomePage = () => {
         </p>
       </div>
       <div className="button" style={{ display: "flex", alignSelf: "center" }}>
-        <button>Start Tracking Now</button>
+        <Link to="/trackingPage">
+          <button>Start Tracking Now</button>
+        </Link>
       </div>
     </div>
   );
