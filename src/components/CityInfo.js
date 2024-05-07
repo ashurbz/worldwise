@@ -1,18 +1,18 @@
 import React, { useEffect } from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import { useCityContext } from "../contexts/CityProvider";
 
 const CityInfo = () => {
   const { cityInfo, getInfo } = useCityContext();
   const { id } = useParams();
-
+  const navigate = useNavigate();
   const date = new Date(cityInfo.date);
   const formattedDate = date.toDateString();
 
   useEffect(() => {
     getInfo(id);
   }, []);
-  console.log(cityInfo);
+
   return (
     <div
       style={{
@@ -43,6 +43,24 @@ const CityInfo = () => {
             to={`https://en.wikipedia.org/wiki/${cityInfo.cityName}`}
           >{`Check out ${cityInfo.cityName} on Wikipedia`}</Link>
         </p>
+      </div>
+      <div>
+        <button
+          onClick={() => navigate(-1)}
+          style={{
+            padding: "10px",
+            margin: "10px",
+            border: "2px solid black",
+            borderRadius: "10px",
+            color: "white",
+            backgroundColor: "darkgray",
+            fontSize: "large",
+            fontWeight: "bold",
+            cursor: "pointer",
+          }}
+        >
+          Back
+        </button>
       </div>
     </div>
   );
