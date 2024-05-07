@@ -30,7 +30,6 @@ const CityProvider = ({ children }) => {
     const data = await res.json();
     setCityInfo(data);
   };
-  console.log(cityInfo);
 
   return (
     <CityContext.Provider

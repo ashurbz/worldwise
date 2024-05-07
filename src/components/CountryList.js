@@ -10,8 +10,8 @@ const CountryList = () => {
 
   return (
     <div>
-      {country1?.map((el) => {
-        return <Country el={el} />;
+      {country1?.map((el, index) => {
+        return <Country el={el} key={index} />;
       })}
     </div>
   );
