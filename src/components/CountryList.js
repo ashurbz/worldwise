@@ -1,11 +1,13 @@
 import React from "react";
 import Country from "./Country";
+import { useCityContext } from "../contexts/CityProvider";
 
-const CountryList = ({ cityData }) => {
+const CountryList = () => {
+  const { cityData } = useCityContext();
   const country1 = cityData.map((el) => {
     return { country: el.country, emoji: el.emoji };
   });
-  console.log(country1);
+
   return (
     <div>
       {country1?.map((el) => {

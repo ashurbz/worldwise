@@ -1,7 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useCityContext } from "../contexts/CityProvider";
 
-const City = ({ data, handleDelete }) => {
+const City = ({ data }) => {
+  const { handleDelete } = useCityContext();
   const date = new Date(data.date);
   const formattedDate = date.toDateString();
 
